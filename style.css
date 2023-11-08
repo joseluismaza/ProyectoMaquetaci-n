@@ -138,16 +138,10 @@ section > img{
 
 #categorias {
   display: grid;
-  /*grid-template-columns: repeat(6, 1fr);*/
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
   justify-content: space-evenly;
 
-}
-
-@media (max-width: 768px) {
-  #categorias {
-    grid-template-columns: 1fr; /* Cambiar a una sola columna en dispositivos móviles */
-  }
 }
 
 .grid-container {
@@ -253,4 +247,13 @@ div > img{
 
 .promocion{
   width: 100%;
+}
+
+@media (max-width: 1145px){
+  .grid-container{
+    gap: 5px;
+    grid-column: 1;
+    grid-row: repeat(7, 200px);
+    height: auto;
+  }
 }
