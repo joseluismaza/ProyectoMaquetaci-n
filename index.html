@@ -11,31 +11,164 @@
 <body>
   <header>
     <img src="assets/PcComponentes.png" alt="logo">
-    <!--<nav>
+    <nav>
       <ul class="menu">
-        <li><a hrref="#">Componentes</a></li>
-        <li><a hrref="#">Impresoras</a></li>
-        <li><a hrref="#">Televisores</a></li>
-        <li><a hrref="#">Electrodomesticos</a></li>
+        <li class="dropdown">
+          <a href="#">Hogar</a>
+          <ul class="sub-menu">
+            <li><a href="#">Televisores</a></li>
+            <li><a href="#">Audio y Hifi</a></li>
+            <li><a href="#">Movilidad</a></li>
+            <li><a href="#">Gran electrodoméstico</a></li>
+            <li><a href="#">Belleza y Salud</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Informática</a>
+          <ul class="sub-menu">
+            <li><a href="#">Accesorios Informática</a></li>
+            <li><a href="#">Gaming</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Telefonía</a></li>
+        <li><a href="#">Smartwatches</a></li>
       </ul>
     </nav>
-    <img src="assets/menu.png" alt="menu" class="menu_lateral">-->
-    <button type="button" class="menu">
-      <div class="menu_lateral2">
-        <img src="assets/menu.png" alt="menu" class="menu">
-      </div>
-      <span>Todas las categorias</span>
-      <nav class="menu_oculto">
-        <ul class="menu">
-          <li><a hrref="#">Componentes</a></li>
-          <li><a hrref="#">Impresoras</a></li>
-          <li><a hrref="#">Televisores</a></li>
-          <li><a hrref="#">Electrodomesticos</a></li>
-        </ul>
-      </nav>
-    </button>
-
+    <img src="assets/menu.png" alt="menu" class="menu_lateral">
   </header>
+  <main id="main_content">
+    <section class="blackfriday">
+      <img src="assets/blackfriday.jpg" alt="blackfriday">
+    </section>
+  </main>
+  <section id="categorias" class="grid_container">
+    <h1>Categorías destacadas</h1>
+    <article class="Televisores grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/720tClxaQkPahn8aH6f79C/e59b26b735bf822c394849f228665f77/MicrosoftTeams-image__34_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Televisores</h3>
+    </article>
+    <article class="informatica grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/6Xdetcg5IsXkcORal4LLg4/f3502080656117fa9ac89e8c271ed50d/informatica.png"
+          alt="Syltherine">
+      </div>
+      <h3>Informática</h3>
+    </article>
+    <article class="telefonia grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/5oB7ftDyUQl4g724punD1p/a1c33344312ac2b37f3e33392d19dc5f/MicrosoftTeams-image__38_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Telefonía</h3>
+    </article>
+    <article class="Gran_electrodomestico grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/2F4PnMn77J8oMOAcNClbET/62d4d6f50353bc607008d09762f575fd/MicrosoftTeams-image__36_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Gran electrodoméstico</h3>
+    </article>
+    <article class="Hogar grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/7A5mMksfE3IhVB2YjpE4YP/72eca7096412269cc4b3136695f20235/MicrosoftTeams-image__35_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Hogar</h3>
+    </article>
+    <article class="Belleza_salud grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/4hKs80bbO4Y6k9n7gJ2MVb/26d54802ce3929eb0ffe09f59734b852/MicrosoftTeams-image__37_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Belleza y Salud</h3>
+    </article>
+    <article class="Gaming grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/56MT32wBig8WZzinNjkKaN/8c2ab65b18dfca82da66de820d848429/MicrosoftTeams-image__40_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Gaming</h3>
+    </article>
+    <article class="Smartwatches grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/jj1uQddHAQs6y60cXsCsr/fc6406006ec095d6cd28a62471198f96/MicrosoftTeams-image__42_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Smartwatches</h3>
+    </article>
+    <article class="Movilidad grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/ObQuwdDzkkMUGTes7CP1J/f0da18da76ae3ab1a3e881b22210057e/MicrosoftTeams-image__43_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Movilidad</h3>
+    </article>
+    <article class="Accesorios_informatica grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/2BnKSCC1m70NsU5A58o90x/ce993f4bc43c1b47b98e216fe7da5408/informatica__5_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Accesorios de informática</h3>
+    </article>
+    <article class="Audio grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/5PanniotUQXoQRFBKQ6gcd/1bc91007e285f5b5353f3144717b80b1/MicrosoftTeams-image__45_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Audio y Hifi</h3>
+    </article>
+    <article class="Entretenimiento grid-container">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/iPriynP0ZoTD1WKduqKFz/37db5edf7967ad02654267beac3ff409/MicrosoftTeams-image__46_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Entretenimiento</h3>
+    </article>
+    <article class="Innovacion_tecnologia grid-container">
+      <div>
+        <img class="promocion"
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/4GTVtQghMSMHUei4L8A0Ge/4a5b51f5256f331aa06c4f599a0b3aa5/MOBILE_-_Home.png?q=88&fm=jpg&w=495"
+          alt="Syltherine">
+      </div>
+      <h3>Innovación y tecnología</h3>
+      <h2>Semanas Black. Ahorra con la tecnología de Apple</h2>
+    </article>
+    <article class="Pack_PS5 grid-container">
+      <div>
+        <img class="promocion"
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/7kFkMCdNwOcGqKK3vL1dcH/188ed4b1329d5db66fbf21c9048b4a46/Teaser_660x370__2_.jpg?q=88&w=495"
+          alt="Syltherine">
+      </div>
+      <h3>Hasta el 27/11</h3>
+      <h2>Pack PS5 + Call of Duty Modern Warfare III</h2>
+    </article>
+  </section>
+  <section id="marcas destacadas">
+    <div class="apple grid-container-marcas">
+      <div>
+        <img
+          src="https://cms-images.mmst.eu/osyynfyvlyjc/iPriynP0ZoTD1WKduqKFz/37db5edf7967ad02654267beac3ff409/MicrosoftTeams-image__46_.png"
+          alt="Syltherine">
+      </div>
+      <h3>Entretenimiento</h3>
+    </div>
+
+  </section>
 </body>
 
 </html>

@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500&family=Teko:wght@300;400&display=swap');
+
+body{
+  background-image: url(assets/pexels-giovanni-vardan-13371857.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+/* TIPOGRAFIA */
+h1, h2, h3, h4, span, a, p{
+  font-family: 'Signika Negative', sans-serif;
+}
+
+h1{
+  letter-spacing: 2px;
+}
+
+h2, h3{
+  font-weight: 300;
+  font-size: 14px;
+}
+/* TIPOGRAFIA */
+/* MENÚ */
 header{
   display: flex;
   padding: 30px;
   align-items: center;
+  background-color: #DF0000;
+  width: 100%;
 
 }
 header > img{
@@ -10,39 +36,67 @@ header > img{
   margin-right: 60px;
 }
 
-button{
+header{
   display: flex;
-  padding: 10px;
-  justify-content: space-evenly;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
 }
-.menu_lateral2 > img{
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
-
-button > nav{
-  display: none;
-}
-
-/*header > nav{
+header > nav{
   display: flex;
   flex-grow: 1;
   justify-content: center;
 }
 
-.menu{
+/* Estilos para el menú principal */
+.menu {
+  list-style: none;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  justify-content: space-evenly;
+  width: 100%;
   list-style: none;
   padding: 10px;
+  color: white;
 }
 
-a{
-  color: black; cambiar
-  font-weight: 600; fontawsome
+.menu li {
+  position: relative;
+  margin-right: 20px;
+}
+
+/* Estilos para los elementos desplegables */
+.dropdown:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+}
+
+.sub-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para los enlaces */
+.menu a {
   text-decoration: none;
+  color: white;
+  font-weight: 600; /* fontawsome*/
+  text-decoration: none;
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.sub-menu a {
+  color: #333;
 }
 
 .menu_lateral{
@@ -50,13 +104,153 @@ a{
   width: 40px;
   height: auto;
 }
-@media (max-width: 900px){
+/* MENÚ */
+/* RESPONSIVE MENU */
+@media (max-width: 730px){
   header > nav{
     display: none;
     }
-
   .menu_lateral{
     display: block;
     cursor: pointer;
   }
-}*/
+}
+/* RESPONSIVE MENU */
+.container{
+  margin-left: 50px;
+  width: 100%;
+}
+
+.blackfriday{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  
+}
+
+section > img{
+  width: 30%;
+  height: auto;
+}
+
+#categorias {
+  display: grid;
+  /*grid-template-columns: repeat(6, 1fr);*/
+  grid-gap: 20px;
+  justify-content: space-evenly;
+
+}
+
+@media (max-width: 768px) {
+  #categorias {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna en dispositivos móviles */
+  }
+}
+
+.grid-container {
+  text-align: center;
+  background-color: black; /* Set the background color to black */
+  color: white;
+  width: 50%; /* Make each element occupy 100% width of its cell */
+  height: auto; /* Make each element occupy 100% height of its cell */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 65px;
+  border-radius: 10px;
+}
+
+.grid-container:hover{
+  background-color: #333;
+  cursor: pointer;
+}
+
+#categorias > h1 {
+  grid-column: 1 / -1;
+  text-transform: uppercase;
+  margin-left: 20px;
+  color: white;
+}
+
+div > img{
+  width: 75%;
+}
+/* Grid de cada categoria */
+.Televisores {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.informatica {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.telefonia {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.Gran_electrodomestico {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.Hogar {
+  grid-row: 2;
+  grid-column: 5;
+}
+
+.Belleza_salud {
+  grid-row: 2;
+  grid-column: 6;
+}
+
+.Gaming {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.Smartwatches {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.Movilidad {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.Accesorios_informatica {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.Audio {
+  grid-row: 3;
+  grid-column: 5;
+}
+
+.Entretenimiento {
+  grid-row: 3;
+  grid-column: 6;
+}
+
+.Innovacion_tecnologia {
+  grid-row: 4;
+  grid-column: 2 / 5;
+}
+
+.Pack_PS5 {
+  grid-row: 4;
+  grid-column: 4 / 7;
+}
+
+.promocion{
+  width: 100%;
+}
